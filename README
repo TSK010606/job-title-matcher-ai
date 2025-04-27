@@ -1,1 +1,31 @@
+# Job Title Matcher AI
+
+This is an AI project that matches job titles using a combination of **Amazon Comprehend** and **TF-IDF** vectorization with **Cosine Similarity**.
+
+## Requirements
+
+- AWS Account
+- Python 3.x
+- Dependencies: boto3, scikit-learn, pandas
+
+## Setup
+
+1. Install dependencies:
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+2. Setup AWS Comprehend:
+   - Ensure that your AWS credentials are configured properly (using AWS CLI or environment variables).
+
+3. Lambda Function:
+   - Deploy `lambda_function.py` to AWS Lambda.
+   - Set up **API Gateway** for API access.
+
+4. Test the API with POST requests containing a job title.
+
+## Usage
+
+You can test the Job Title Matcher AI by calling the API endpoint with job titles, and it will return the most similar job title and its similarity score.
+
 
